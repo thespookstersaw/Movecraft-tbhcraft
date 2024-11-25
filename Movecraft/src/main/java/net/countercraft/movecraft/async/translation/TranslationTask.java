@@ -398,7 +398,7 @@ public class TranslationTask extends AsyncTask {
             return false;
         }
 
-        if (craft.getType().getBooleanProperty(CraftType.USE_INCLINE)){
+        if (craft.getType().getBoolProperty(CraftType.USE_INCLINE)){
             int incline = inclineCraft(oldHitBox);
             if (incline > 0) {
                 boolean tooSteep = craft.getType().getIntProperty(CraftType.GRAVITY_INCLINE_DISTANCE) > -1
