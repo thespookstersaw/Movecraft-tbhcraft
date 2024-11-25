@@ -171,6 +171,7 @@ final public class CraftType {
     public static final NamespacedKey DYNAMIC_FLY_BLOCK = buildKey("dynamic_fly_block");
     public static final NamespacedKey CHEST_PENALTY = buildKey("chest_penalty");
     public static final NamespacedKey GRAVITY_INCLINE_DISTANCE = buildKey("gravity_incline_distance");
+    public static final NamespacedKey USE_INCLINE = buildKey("use_incline");
     public static final NamespacedKey GRAVITY_DROP_DISTANCE = buildKey("gravity_drop_distance");
     public static final NamespacedKey COLLISION_SOUND = buildKey("collision_sound");
     public static final NamespacedKey FUEL_TYPES = buildKey("fuel_types");
@@ -497,6 +498,7 @@ final public class CraftType {
         registerProperty(new BooleanProperty("moveEntities", MOVE_ENTITIES, type -> true));
         registerProperty(new BooleanProperty("onlyMovePlayers", ONLY_MOVE_PLAYERS, type -> true));
         registerProperty(new BooleanProperty("useGravity", USE_GRAVITY, type -> false));
+        registerProperty(new BooleanProperty("useIncline", USE_INCLINE, type -> false));
         registerProperty(new IntegerProperty("hoverLimit", HOVER_LIMIT, type -> 0));
         registerProperty(new MaterialSetProperty("harvestBlocks", HARVEST_BLOCKS,
                 type -> EnumSet.noneOf(Material.class)));
