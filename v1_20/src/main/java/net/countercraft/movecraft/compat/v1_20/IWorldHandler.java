@@ -62,7 +62,7 @@ public class IWorldHandler extends WorldHandler {
 
     public IWorldHandler() {
         String version = Bukkit.getServer().getMinecraftVersion();
-        if (!version.equals("1.20.6"))
+        if (!version.equals("1.20.1"))
             throw new IllegalStateException("Movecraft is not compatible with this version of Minecraft: " + version);
     }
 
